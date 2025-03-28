@@ -15,8 +15,7 @@ let package = Package(
 
     products: [
         // main targets
-        .library(name: "MLX", targets: ["MLX"]),
-        .library(name: "Cmlx", targets: ["Cmlx"]),
+        .library(name: "MLX", type: .dynamic, targets: ["MLX"]),
         .library(name: "MLXRandom", targets: ["MLXRandom"]),
         .library(name: "MLXNN", targets: ["MLXNN"]),
         .library(name: "MLXOptimizers", targets: ["MLXOptimizers"]),
